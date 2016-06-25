@@ -15,7 +15,7 @@ servers = {
   aws:     {type: :aws,         provision: %w{rvm- aws-} },
   heroku:  {type: :heroku,      provision: %w{git rvm- heroku- ssh-} },
   node:    {type: :javascript,  provision: %w{node rvm- aws-} },
-  serverless: {type: :javascript,  provision: %w{node serverless, rvm- aws-} },
+  serverless: {type: :javascript,  provision: %w{node serverless rvm- aws-} },
   express: {type: :javascript,  provision: %w{node express mongodb_client} },
   sails:   {type: :javascript,  provision: %w{node sails mongodb_client} },
   mean:    {type: :javascript,  provision: %w{git node mean mongodb_client} },
