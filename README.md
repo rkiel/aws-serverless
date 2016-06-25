@@ -29,8 +29,8 @@ Grant user permissions
 * click **aws-serverless**
 * click **Permissions**
 * click **Attach Policy**
-* type in `admin`
-* check **AdministratorAccess**
+* type in `power`
+* check **PowerUserAccess**
 * click **Attach Policy**
 
 # OS X
