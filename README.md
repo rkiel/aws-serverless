@@ -47,7 +47,7 @@ Start up vagrant
 ```unix
 vagrant up
 
-vagrant ssh node
+vagrant ssh serverless
 
 cd /vagrant
 ```
