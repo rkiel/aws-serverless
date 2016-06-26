@@ -58,4 +58,11 @@ Create a new project called `hello`
 cd /vagrant
 
 serverless project create -n hello -s dev -r us-east-1 -p default -c true
+
+cd hello
+mv *.env _meta *.json ..
+cat .gitignore >> ../.gitignore
+
+cd ..
+rmdir hello
 ```
