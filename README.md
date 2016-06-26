@@ -62,6 +62,7 @@ serverless project create -n hello -s dev -r us-east-1 -p default -c true
 cd hello
 mv *.env _meta *.json ..
 cat .gitignore >> ../.gitignore
+rm .gitignore
 
 cd ..
 rmdir hello
