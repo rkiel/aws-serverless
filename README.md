@@ -33,21 +33,29 @@ Grant user permissions
 * check **PowerUserAccess**
 * click **Attach Policy**
 
-# OS X
+# Vagrant
 
-Parse out the AWS credentials
+Prepare AWS credentials before starting up Vagrant
 
 ```unix
 grep aws-serverless ~/Downloads/credentials.csv |awk  -F "\"*,\"*" '{print $2}' > aws_access_key_id.txt
 grep aws-serverless ~/Downloads/credentials.csv |awk  -F "\"*,\"*" '{print $3}' > aws_secret_access_key.txt
+rm -f ~/Downloads/credentials.csv
 ```
 
-Start up vagrant
+Start up Vagrant
 
 ```unix
 vagrant up
 
 vagrant ssh serverless
+```
+# Serverless
 
+Create a new project called `hello`
+
+```unix
 cd /vagrant
+
+serverless project create -n hello -s dev -r us-east-1 -p default -c true
 ```
