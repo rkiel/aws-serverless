@@ -20,17 +20,17 @@ var pi = 3.14;
 
 #### Falsy
 
-* false
-* null
-* undefined
-* ''  // empty string
-* 0
+* `false`
+* `null`
+* `undefined`
+* `''`  // empty string
+* `0`
 
 #### Truthy
 
-* true
-* 'true'
-* 'false'
+* `true`
+* `'true'`
+* `'false'`
 
 #### Array
 
@@ -40,17 +40,28 @@ var rush = ['Geddy','Alex','Neil'];
 
 #### Object
 
+##### Assigning a Literal
+
 ```javascript
 var person = {
   firstName: 'Terry',
   lastName: 'Brown',
   age: 40
-}
+};
+```
 
+##### Accessing as a property and as a hash map
+
+```javascript
+person.firstName // Terry
+person['firstName'] // Terry
+```
+
+##### Assigning as a property and as a hash map
+
+```javascript
 person.fullName = persons.firstName + ' ' + person.lastName;
-
-person.fullName // 'Terry Brown'
-person['fullName'] // 'Terry Brown'
+person.['fullName'] = persons.firstName + ' ' + person.lastName;
 ```
 
 ### Functions
