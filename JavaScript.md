@@ -40,6 +40,13 @@ var rush = ['Geddy','Alex','Neil'];
 
 #### Object
 
+```javascript
+{
+  firstName: 'Terry',
+  lastName: 'Brown',
+  age: 40
+}
+```
 ##### Assigning a Literal
 
 ```javascript
