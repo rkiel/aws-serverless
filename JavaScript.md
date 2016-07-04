@@ -31,6 +31,7 @@ var pi = 3.14;
 * `true`
 * `'true'`
 * `'false'`
+* all other non-falsy values
 
 #### Array
 
